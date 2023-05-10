@@ -1,16 +1,21 @@
 main .carousel-container {
   padding: 0;
+  background-color: #fff;
+
 }
 
 main .carousel {
   /*changed display to inline-flex from flex */
-  display: inline-flex;
+  display: flex;
   scroll-snap-type: x mandatory;
   overflow: scroll hidden;
   scroll-behavior: smooth;
-  max-width: 1680px;
+  /* max-width: 1680px;*/
+ max-width: 1200px;
   margin: auto;
   align-items: center;
+  background-color: #fff;
+  
 }
 
 main .carousel picture {
@@ -35,19 +40,23 @@ main .carousel > div {
   flex-shrink: 0;
   scroll-snap-align: start;
   position: relative;
-  min-height: 580px;
+  min-height: 400px;
   align-items: flex-start;
   display: inline-flex;
+  
 }
 
 main .carousel div.carousel-text {
-  max-width: 1200px;
-  margin: 0 auto;
+   margin: 0 auto;
   background-color: white;
   min-height: 188px;
   padding: 0 28px;
+  width: 50%;
+}
 
+main .carousel div.carousel-image {
 
+  width: 50%;
 }
 
 main .carousel div.carousel-text p {
@@ -58,32 +67,50 @@ main .carousel div.carousel-text p {
 main .carousel div.carousel-text h2 {
   margin: 0;
   margin-top: 16px; 
-
-  font-size: 2.875rem;
-    line-height: 3.75rem;
-
+  
+  line-height: 4rem;
   font-weight: 750;
   position: relative; 
   margin-top: 0; 
   border-bottom: none; 
   margin-bottom: 0;
+  text-align: left;  
+  font-size: 4rem;
 }
 
 main .carousel div.carousel-text .button {
-  margin: 0;
+  margin: 40px 0 0 0;
   
 }
 main .carousel div.carousel-text p>a {
   background-color: #0070F6;
   font-weight: 750;
-  font-size: 1rem;
-  padding: 15px;
+  font-size: 1.5rem;
+  padding: 15px 25px 15px 25px;
   letter-spacing: 1px;
   line-height: 1.25rem;
+  border-radius: 30px;
+  
+}
+
+main .carousel div.carousel-text h3>a{
+  background-image:url('icons/windows-10-icon-logo.png') ;
+  font-weight: 750;
+  font-size: 1.5rem;
+  padding: 15px 25px 15px 25px;
+  letter-spacing: 1px;
+  line-height: 1.25rem;
+  border-radius: 30px;
+  color: #fff;
+  display: block;
+
+border: 1px #0070F6 solid;
+ 
 }
 
 main .carousel div.carousel-text p>a:hover{
  border: 3px  solid #0070F6;
+
  box-shadow: 0px 12px 32px -16px rgba(0,112,246,0.4),0px 24px 32px -16px rgba(7,29,43,0.4);
 }
 
@@ -113,7 +140,8 @@ main .carousel-buttons button {
   padding: 0;
   margin: 5px;
   border-radius: 5px;
-  background-color: #0070F6;
+  /*background-color: rgb(0,112,246);*/
+ 
 }
 
 
@@ -122,11 +150,11 @@ main .carousel-buttons button.selected {
   background-color: #0070F6;
 }
 main .carousel-buttons p.a {
-  background-color: forestgreen;
+  background-color:#0070F6;
 }
 
 
-/*
+
 main .carousel-buttons  a.button:any-link, button {
   font-family: var(--body-font-family);
   display: inline-block;
@@ -162,4 +190,3 @@ a.button.secondary, button.secondary {
   border: 2px solid currentcolor;
   color: var(--text-color)
 }
-*/

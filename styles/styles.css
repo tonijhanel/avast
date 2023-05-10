@@ -16,13 +16,13 @@
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #fff;
   --text-color: #000;
 
   /* fonts */
   --body-font-family: "MierB03" !important;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family: var(--body-font-family);
 
   /* body sizes */
   --body-font-size-m: 22px;
