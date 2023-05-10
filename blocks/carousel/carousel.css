@@ -73,7 +73,7 @@ main .carousel div.carousel-text h2 {
   position: relative; 
   margin-top: 0; 
   border-bottom: none; 
-  margin-bottom: 0;
+  margin-bottom: 50px;
   text-align: left;  
   font-size: 4rem;
 }
@@ -93,21 +93,43 @@ main .carousel div.carousel-text p>a {
   
 }
 
-main .carousel div.carousel-text h3>a{
-  background-image:url('icons/windows-10-icon-logo.png') ;
-  font-weight: 750;
-  font-size: 1.5rem;
-  padding: 15px 25px 15px 25px;
+main .carousel div.carousel-text h3{
+  background-image:url('\\icons/Windows_icon_logo.png') ;
+  background-repeat: no-repeat;
+  background-position: 8% center;
+  background-color: #0070F6;
+  padding: 0px 15px 13px 13px;
   letter-spacing: 1px;
   line-height: 1.25rem;
   border-radius: 30px;
   color: #fff;
-  display: block;
-
-border: 1px #0070F6 solid;
+  display: inline;
+  background-size: 27px;
+  border: 1px #0070F6 solid;
+  text-decoration: none;
  
 }
 
+main .carousel div.carousel-text h3:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+
+}
+main .carousel div.carousel-text h3>a{
+  padding-left: 35px;
+  font-weight: 750;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: -20px;
+}
+
+
+main .carousel div.carousel-text h3>a:hover{
+
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+ 
+}
 main .carousel div.carousel-text p>a:hover{
  border: 3px  solid #0070F6;
 

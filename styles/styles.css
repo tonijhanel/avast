@@ -59,8 +59,9 @@ body {
   font-family: var(--body-font-family);
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--background-color);
+  /*background-color: var(--background-color);*/
   display: none;
+  background-color: rgba(247,250,252, 1) !important;
 }
 
 body.appear {
